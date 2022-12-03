@@ -8,6 +8,24 @@ html {
 body {
   background: #F4F2FF; }
 
+.overlay {
+  background: rgba(50, 32, 124, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 99999 !important;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.modal {
+  background: #fff;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  left: 35%;
+  z-index: 999999 !important; }
+
 nav {
   width: 25%;
   float: right;
@@ -34,21 +52,17 @@ nav ul li a {
   width: 100px;
   text-decoration: none; }
 
-#homepage-content {
+#homepage-content, #get-started, #contact {
   width: 50%;
   margin: 15% auto 0 auto; }
 
-#get-started {
-  width: 75%;
-  margin: 15% auto 0 auto; }
-
-#homepage-content h1, #get-started h1 {
+#homepage-content h1, #get-started h1, #contact h1 {
   color: #32207C;
   font: 700 4.5rem Lust, serif;
   text-align: center;
   margin-bottom: 1.8%; }
 
-.get-started-button {
+.get-started-button, #contact input[type='submit'] {
   background: #8974E0;
   color: #32207C;
   font: 700 1.2rem Lust, serif;
@@ -68,6 +82,21 @@ nav ul li a {
   width: 50%;
   line-height: 2em;
   margin: 0 auto 25px auto; }
+
+.txtFld {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #e4e4e4; }
+
+#contact textarea {
+  width: 100%;
+  height: 200px;
+  margin: 25px 0;
+  border: 1px solid #e4e4e4; }
+
+#contact input[type='submit'] {
+  width: 100%; }
 
 footer {
   width: 100%;

@@ -1,5 +1,9 @@
 $(() => {
-   $('#get-started').on('click', (e) => {
-      alert('click')
+
+
+   $('.get-started-button').on('click', (e) => {
+      //e.preventDefault();
+      //overlay()
+
    })
 })

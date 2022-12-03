@@ -4,7 +4,6 @@ require 'haml'
 require 'sass'
 
 
-
 get('/public/css/main.css'){scss :main}
 
 
