@@ -1,0 +1,38 @@
+$primaryPurpleTxt: #32207C;
+$secondaryPurpleTxt: #8974E0;
+$bodyGrayTxt: #4B4645;
+$logoFont: Raleway, sans-serif;
+$bodyTxt: Supria Sans, sans-serif;
+$headingTxt: Lust, serif;
+
+
+* {
+ padding: 0;
+ margin: 0; 
+}
+
+html {
+  box-sizing: border-box; 
+}
+
+body {
+
+}
+
+.logo {
+  width: 40px;
+  border-bottom: 4px solid $primaryPurpleTxt; 
+
+}
+
+.logo a {
+   font: 700 1.5rem $logoFont;
+   color: $primaryPurpleTxt;
+   width: 100px;
+   text-decoration: none;
+
+}
+
+
+
+

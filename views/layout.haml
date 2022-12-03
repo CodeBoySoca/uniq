@@ -5,4 +5,16 @@
   %link{ :rel => 'stylesheet', :href => url('css/main.css')}
 %body
   #content
+    .logo 
+      %a(href='/')Uniq
+    %nav
+      %ul
+        %li 
+          %a(href='/about') About
+        %li 
+          %a(href='/contact') Contact
+        %li 
+          %a(href='/loft')Loft
+        %li 
+          %a(href='/sign-in') Sign in
     =yield

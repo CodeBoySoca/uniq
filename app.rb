@@ -1,10 +1,19 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'sass'
+
+
+
+get('/public/css/main.css'){scss :main}
 
 
 get '/' do
   haml :index, :escape_html => false
+end
+
+get '/sign-in' do
+  haml :'sign-in', :escape_html => false 
 end
 
 get '/about' do
@@ -40,13 +49,13 @@ get '/wishlist' do
 end
 
 get '/messages' do
-  haml :messages, escape_html => false
+  haml :messages, :escape_html => false
 end
 
 get '/profile' do
-  haml :profile, escape_html => false  
+  haml :profile, :escape_html => false  
 end
 
 get '/add-items' do
-  haml :'add-items', escape_html => false
+  haml :'add-items', :escape_html => false
 end
