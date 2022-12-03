@@ -16,23 +16,124 @@ html {
 }
 
 body {
+ background: #F4F2FF;
+}
 
+
+nav {
+  width: 25%;
+  float: right;
+  margin-top: -25px;
+}
+
+nav ul {
+
+}
+
+nav ul li {
+   display: inline;
+   padding-right: 50px;
+}
+
+
+nav ul li a {
+  font: 900 1rem $bodyTxt;
+  font-stretch: ultra-condensed;
+  color: $primaryPurpleTxt;
+  text-decoration: none;
 }
 
 .logo {
   width: 40px;
   border-bottom: 4px solid $primaryPurpleTxt; 
-
+  margin: 30px 0 0 75px;
 }
 
 .logo a {
-   font: 700 1.5rem $logoFont;
-   color: $primaryPurpleTxt;
-   width: 100px;
-   text-decoration: none;
+  font: 700 1.5rem $logoFont;
+  color: $primaryPurpleTxt;
+  width: 100px;
+  text-decoration: none;
+}
 
+
+
+#homepage-content {
+  width: 50%;
+  margin: 15% auto 0 auto;
+}
+
+#get-started {
+  width: 75%;
+  margin: 15% auto 0 auto;
+}
+
+
+#homepage-content h1, #get-started h1 {
+  color: $primaryPurpleTxt;
+  font: 700 4.5rem $headingTxt;
+  text-align: center;
+  margin-bottom: 1.8%;
 }
 
 
 
 
+
+
+
+
+.get-started-button {
+  background: $secondaryPurpleTxt;
+  color: $primaryPurpleTxt;
+  font: 700 1.2rem $headingTxt;
+  width: 40%;
+  height: 75px;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+
+
+#get-started p {
+  color: $bodyGrayTxt;
+  font: 200 1.4rem $bodyTxt;
+  text-align: left;
+  width: 50%;
+  line-height: 2em;
+  margin: 0 auto 25px auto;
+}
+
+
+footer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+}
+
+footer ul {
+  margin: 0 auto;
+  width: 100px;
+}
+
+footer ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 15px;
+}
+
+footer img {
+  width: 30px;
+  height: 28px;
+}
+
+
+// @media(max-width: ){
+
+// }

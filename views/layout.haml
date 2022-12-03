@@ -3,6 +3,8 @@
   %head
   %title Hello from Sinatra
   %link{ :rel => 'stylesheet', :href => url('css/main.css')}
+  %script(src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous")
+  %script(src="js/main.js")
 %body
   #content
     .logo 
@@ -18,3 +20,9 @@
         %li 
           %a(href='/sign-in') Sign in
     =yield
+%footer
+  %ul
+    %li 
+      %img(src='/images/twitter.png' alt='twitter')
+    %li 
+      %img(src='/images/instagram.png' alt='instagram')
