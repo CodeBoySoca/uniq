@@ -2,9 +2,18 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'sass'
+require 'json'
+require 'pony'
 
 
 get('/public/css/main.css'){scss :main}
+
+
+class Utilities
+    def send_email email
+        #code here
+    end
+end
 
 
 get '/' do
@@ -21,6 +30,13 @@ end
 
 get '/contact' do
   haml :contact, :escape_html => false
+end
+
+post '/contact' do
+   content_type :json
+   data = params.to_json
+   send_obj = Utilities.new
+   send_obj.send_email(data)
 end
 
 get '/get-started' do

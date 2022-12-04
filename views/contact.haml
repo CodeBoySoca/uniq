@@ -1,8 +1,8 @@
 #contact
   %h1 Contact
-  %form(method='post')
-    %input(type='text' name='name' placeholder=' Name' class='txtFld')
-    %input(type='email' name='email' placeholder=' E-mail' class='txtFld')
-    %input(type='text' name='subject' placeholder=' Subject' class='txtFld')
-    %textarea(name='message' placeholder=' Message')
-    %input(type='submit' value='send')
+  %form
+    %input(type='text' id='name' name='name' placeholder=' Name' class='txtFld')
+    %input(type='email' id='email' name='email' placeholder=' E-mail' class='txtFld')
+    %input(type='text' id='subject' name='subject' placeholder=' Subject' class='txtFld')
+    %textarea(name='message' id='message' placeholder=' Message')
+    %input(type='submit' value='send' id='contact-button')
