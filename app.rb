@@ -37,9 +37,13 @@ class Uniq < Sinatra::Base
       erb :'sign-in', :escape_html => false 
     end
 
-    get '/register' do
-       erb :register, :escape_html => false
+    get '/sign-up' do
+       erb :'sign-up', :escape_html => false
     end
+
+    get '/passcode' do
+       erb :passcode, :escape_html => false
+    end  
     
     get '/about' do
       erb :about, :escape_html => false
